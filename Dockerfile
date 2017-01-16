@@ -6,6 +6,10 @@ MAINTAINER Pika Do <pokido99@gmail.com>
 # ENV https_proxy=http://proxy:8080
 # ENV no_proxy="127.0.0.1,localhost,.mydomain.com"
 
+ENV DAV_SVN_USER=davsvnu
+ENV DAV_SVN_PASS=davsvnp
+ENV SVN_REPO=repo
+
 # Install and configure Apache WebDAV and Subversion
 RUN apk --no-cache add apache2 apache2-utils apache2-webdav mod_dav_svn subversion
 ADD vh-davsvn.conf /etc/apache2/conf.d/
