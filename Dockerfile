@@ -17,7 +17,9 @@ RUN mkdir -p /run/apache2
 
 ADD run.sh /
 RUN chmod +x /run.sh
-EXPOSE 80
+EXPOSE 80 443
+
+VOLUME /svn
 
 # Define default command
 CMD ["/run.sh"]
