@@ -6,7 +6,7 @@ Docker image for Subversion with WebDAV on Alpine Linux. This image has 'Auto-ve
 ## Building it (it is not up on Dockerhub)
 
 ```
-git clone git@github.com:paul-hammant/alpine-svn.git
+git clone git@github.com:fmaciask/alpine-svn.git
 cd alpine-svn
 docker build -t fmaciask/alpine-svn .
 ```
